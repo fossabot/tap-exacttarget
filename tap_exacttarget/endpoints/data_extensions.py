@@ -53,7 +53,7 @@ class DataExtensionDataAccessObject(DataAccessObject):
 
     @classmethod
     def matches_catalog(cls, catalog):
-        return 'data_extension.' in catalog.get('stream')
+        return 'data_extension.' in catalog.stream
 
     def _get_extensions(self):
         result = request(
