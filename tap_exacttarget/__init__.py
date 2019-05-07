@@ -121,7 +121,7 @@ def do_sync(args):
         LOGGER.fatal('Cannot replicate `subscriber` without '
                      '`list_subscriber`. Please select `list_subscriber` '
                      'and try again.')
-        exit(1)
+        success = False
 
     for stream_accessor in stream_accessors:
         if isinstance(stream_accessor, ListSubscriberDataAccessObject) and \
@@ -146,9 +146,12 @@ def do_sync(args):
 
 @utils.handle_top_exception(LOGGER)
 def main():
-    args = utils.parse_args(REQUIRED_CONFIG_KEYS)
-
     success = True
+
+    try:
+        args = utils.parse_args(REQUIRED_CONFIG_KEYS)
+    except json.decoder.JSONDecodeError:
+        success = False
 
     if args.discover:
         do_discover(args)
