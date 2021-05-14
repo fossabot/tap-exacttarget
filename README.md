@@ -1,4 +1,6 @@
 # tap-exacttarget
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwealthsimple%2Ftap-exacttarget.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwealthsimple%2Ftap-exacttarget?ref=badge_shield)
+
 
 Author: Connor McArthur (connor@fishtownanalytics.com)
 
@@ -64,3 +66,7 @@ tap-exacttarget -c config.json --properties catalog.json
 Embedded FuelSDK Copyright &copy; 2017 Salesforce and Licensed under the MIT License
 
 Copyright &copy; 2017 Stitch
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwealthsimple%2Ftap-exacttarget.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwealthsimple%2Ftap-exacttarget?ref=badge_large)
